@@ -1,5 +1,5 @@
 
-/* basic style here */
+/* basic css style here */
 
 *{
     margin: 0;
@@ -12,8 +12,6 @@
   font-optical-sizing: auto;
   background-color: black;
   color: #FFFFFF;
-  max-width: 1200px;
-  margin: 0 auto;
 }
 
 /* shared style here */
@@ -24,17 +22,17 @@
     padding: 12px 16px;
     font-size: 1rem;
     font-weight: 600;
+    border: none;
     border-radius: 25px;
     color: #FFFFFF;
     background: linear-gradient(45deg, #F7E93F 10%, #FB09B4, #9100F8 );
     cursor: pointer;
-    transition: 0.3s ;
 }
-.btn:hover{
-    transform: scale(1.1)
-}
+
 /* navbar releted style */
 #nav-container{
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     padding: 36px 0px;
@@ -60,4 +58,147 @@
 #nav-container ul a{
     text-decoration: none;
     color: #FFFFFF;
+}
+#nav-container img{
+    display: none;
+}
+
+/* bannar releted style */
+#bannar{
+    background: url(../images/hero-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center ;
+}
+.bannar-container{
+    max-width: 1200px;
+    margin: 100px auto;
+    text-align: center;
+    position: relative;
+}
+.badge{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #1A0B2E;
+    padding: 8px 16px;
+    background-color: #00FF88;
+    max-width: 75px;
+    height: 38px;
+    border-radius: 30px;
+    border: none;
+    position: absolute;
+    top: 20px;
+    left: 680px;
+}
+.bannar-img{
+    align-items: center;
+    position: relative;
+}
+#img-2{
+    position: absolute;
+    top: 100px;
+    left: 540px;
+}
+.bannar-content h1{
+    font-size: 3.8rem;
+    font-weight: 800;
+    margin: 40px 0px 8px 0px;
+}
+.bannar-content p{
+    font-size: 16px;
+    margin-bottom: 24px;
+}
+.bannar-btn{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+.btn-2{
+    display: flex;
+    gap: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    align-items: center;
+    color: #00FF88;
+    padding: 12px 20px;
+    background: transparent;
+    border: 2px solid #00FF88;
+    border-radius: 30px;
+    cursor: pointer;
+}
+@media screen and (max-width:576px) {
+    #nav-container{
+        max-width: 380px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    .logo{
+    font-size: 24px;
+    font-weight: 700;
+    }
+    #nav-container ul{
+        display: none;
+    }
+    #nav-container .btn{
+        display: none;
+    }
+    #nav-container img{
+    display: block;
+    cursor: pointer;
+}
+    .btn{
+        font-size: 10px;
+        padding: 3px 4px;
+        max-width: 200px;
+        gap: 5px;
+    }
+    .btn-2{
+    display: flex;
+    gap: 5px;
+    font-size: 10px;
+    font-weight: 600;
+    align-items: center;
+    color: #00FF88;
+    padding: 3px 4px;
+    background: transparent;
+    border: 1px solid #00FF88;
+    }
+    #bannar{
+        max-width: 430px;
+
+    }
+    .bannar-container{
+    max-width: 400px;
+    }
+    .badge{
+    font-size: 16px;
+    font-weight: 600;
+    color: #1A0B2E;
+    padding: 8px 16px;
+    max-width: 70px;
+    height: 35px;
+    border-radius: 20px;
+    position: absolute;
+    top: 10px;
+    left: 240px;
+    }
+    #img-1{
+        max-width: 200px;
+    }
+    #img-2{
+    max-width: 80px;
+    position: absolute;
+    top: 40px;
+    left: 160px;
+    }
+    .bannar-content h1{
+    font-size: 40px;
+    font-weight: 800;
+    margin: 24px 0px 8px 0px;
+    }
+    .bannar-content p{
+    font-size: 16px;
+    margin-bottom: 24px;
+    max-width: 400px;
+}
 }
