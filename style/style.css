@@ -83,7 +83,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center ;
-    margin: 100px 0px;
+    padding: 100px 0px;
 }
 .bannar-container{
     max-width: 1200px;
@@ -378,6 +378,7 @@ padding: 120px 0px;
     background-size: cover;
     background-position: center ;
     margin-top: 0px;
+    padding: 0px;
     }
     .bannar-container{
     max-width: 400px;
