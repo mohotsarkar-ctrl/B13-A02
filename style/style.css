@@ -83,10 +83,11 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center ;
+    padding: 100px 0px;
 }
 .bannar-container{
     max-width: 1200px;
-    margin: 100px auto;
+    margin: 0px auto;
     text-align: center;
     position: relative;
 }
@@ -121,6 +122,7 @@
 .bannar-content p{
     font-size: 16px;
     margin-bottom: 24px;
+    opacity: 80%;
 }
 .bannar-btn{
     display: flex;
@@ -145,7 +147,7 @@
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
-    margin-bottom: 160px ;
+    margin: 50px 0px 160px 0px;
 }
 .about-podcast h2{
     font-size: 3rem;
@@ -155,6 +157,7 @@
 .about-podcast p{
     font-size: 1rem;
     line-height: 20px;
+    opacity: 80%;
 }
 /* achivment container style */
 .achivment-container{
@@ -173,6 +176,7 @@
 .achivment h3{
     font-size: 1rem;
     line-height: 24px;
+    opacity: 80%;
 }
 /* feature releted style */
 #backgraund{
@@ -197,21 +201,106 @@ padding: 120px 0px;
     grid-row:span 2;
     background-color: rgba(53, 17, 101, 0.4);
     padding: 107px 40px;
+    border-radius: 20px;
 
 }
 .medium-card{
     grid-column: span 2;
     background-color: rgba(53, 17, 101, 0.4);
     padding: 40px;
+    border-radius: 20px;
 }
 .small-card{
     grid-column: span 1;
     grid-row: span 1;
     background-color: rgba(53, 17, 101, 0.4);
     padding: 40px;
+    border-radius: 20px;
 }
-
-
+/* epesode related style */
+#feature-episode{
+    padding: 120px 0px;
+}
+.episode-title{
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+.episode-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.episode{
+    max-width: 380px;  
+    background-color: #250D44; 
+}
+.episode iframe{
+    width: 100%;
+}
+.episode-content{
+    padding: 24px;
+}
+.episode-content h2{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+.episode-content p{
+    font-size: 16px;
+    line-height: 24px;
+    opacity: 60%;
+    margin-bottom: 12px;
+}
+.episode-content span{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #00FF88;
+}
+/* host releted style here */
+.meet-title{
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.host-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    padding: 40px;
+    background-color: rgba(53, 17, 101, 0.4);
+    gap: 24px;
+    align-items: center;
+}
+.host-discribtion h2{
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+.host-discribtion p{
+    font: 16px;
+    line-height: 24px;
+    opacity: 60%;
+    margin-bottom: 16px;
+}
+.social-media{
+    display: flex;
+    gap: 10px;
+}
+.icone{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: black;
+    padding: 10px;   
+}
 @media screen and (max-width:576px) {
     #nav-container{
         max-width: 380px;
@@ -289,6 +378,7 @@ padding: 120px 0px;
     }
     .achivment-container{
         grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
     }
     #backgraund{
     padding: 40px 0px;
@@ -299,7 +389,34 @@ padding: 120px 0px;
     .feature-container{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(1, 250px);
+    }
+    .big-card, .medium-card, .small-card{
+        grid-column: span 1;
+        grid-row: span 1;
+        padding: 24px;
+    }
+    #feature-episode{
+    padding: 60px 0px;
+    }
+    .episode-title{
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    }
+    .episode-container{
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0px 20px;
     gap: 30px;
+    }
+    .meet-title{
+    font-size: 32px;
+    margin-bottom: 24px;
+    }
+    .host-container{
+    flex-direction: column;
+    text-align: center;
+    }
+    .social-media{
+    margin: 0 84px;
     }
 }
