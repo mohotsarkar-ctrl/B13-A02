@@ -28,6 +28,20 @@
     background: linear-gradient(45deg, #F7E93F 10%, #FB09B4, #9100F8 );
     cursor: pointer;
 }
+/* feature card shared style */
+.style img{
+    margin-bottom: 16px;
+}
+.style h2{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+.style p{
+    font-size: 16px;
+    line-height: 24px;
+    opacity: 60%;
+}
 
 /* navbar releted style */
 #nav-container{
@@ -126,6 +140,78 @@
     border-radius: 30px;
     cursor: pointer;
 }
+/* about podcast style */
+.about-podcast{
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 160px ;
+}
+.about-podcast h2{
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+.about-podcast p{
+    font-size: 1rem;
+    line-height: 20px;
+}
+/* achivment container style */
+.achivment-container{
+    max-width: 1200px;
+    text-align: center;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 120px;
+}
+.achivment h2{
+    font-size: 3rem;
+    color: #00FF88;
+    margin-bottom: 16px;
+}
+.achivment h3{
+    font-size: 1rem;
+    line-height: 24px;
+}
+/* feature releted style */
+#backgraund{
+background-color: #230E3D;
+padding: 120px 0px;
+}
+.feature-title h1{
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+.feature-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 250px);
+    gap: 30px;
+}
+.big-card{
+    grid-row:span 2;
+    background-color: rgba(53, 17, 101, 0.4);
+    padding: 107px 40px;
+
+}
+.medium-card{
+    grid-column: span 2;
+    background-color: rgba(53, 17, 101, 0.4);
+    padding: 40px;
+}
+.small-card{
+    grid-column: span 1;
+    grid-row: span 1;
+    background-color: rgba(53, 17, 101, 0.4);
+    padding: 40px;
+}
+
+
 @media screen and (max-width:576px) {
     #nav-container{
         max-width: 380px;
@@ -200,5 +286,20 @@
     font-size: 16px;
     margin-bottom: 24px;
     max-width: 400px;
-}
+    }
+    .achivment-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #backgraund{
+    padding: 40px 0px;
+    }
+    .feature-title h1{
+    font-size: 2rem;
+    }
+    .feature-container{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 250px);
+    gap: 30px;
+    }
 }
